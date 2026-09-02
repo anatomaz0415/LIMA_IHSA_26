@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--ul (não ordenada) itens são
+    exibidos com marcadores (bullets) -->
+    <ul style="list-style-type: square;">
+        <!--dá para usar type="square", por exemplo-->
+        <li>Leite
+        </li>
+        <li>Pão</li>
+        <li>Ovo
+            <ul>
+                <li>ingredientes de bolo</li>
+            </ul>
+        </li>
+
+        <li>Guaraná</li>
+        <li>Fermento
+            <!-- colocar imagem como marcador-->
+            <ul style="list-style-image: url('foto.png');">
+                <li>ingredientes de bolo</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <!--lista ordenada; marcadores numerados por padrão-->
+    <ol style="list-style-type: lower-alpha">
+        <!--
+        type="1" (numeros / padrão)
+        type="A" (letra maiúscula)
+        type="a" (letra minúscula)
+        type="I" (numeros romanos maiusculos)
+        type="i" (numeros romanos minusculos)
+        -->
+        <li>frutas
+            <ol>
+                <li>outro item</li>
+            </ol>
+
+        </li>
+        <li>verduras</li>
+        <li>picanha</li>
+    </ol>
+</body>
+</html>
