@@ -1,0 +1,25 @@
+body{
+    background-color: #ffffff;
+}
+h2{
+    color: #ebf21f;
+    background-color: #ea783b;
+    background-size: 100%;
+}
+
+table{
+background: linear-gradient(#ffff, rgb(255, 204, 0), rgb(228, 108, 28), rgb(255, 255, 255));
+border-radius: 10px;
+border-style: dashed;
+border-color: #000000;
+}
+th{
+    color: #0d0d0d;
+    font-weight: bold;
+}
+td{
+    color: #000000;
+}
+tfoot{
+    font-weight: bold;
+}

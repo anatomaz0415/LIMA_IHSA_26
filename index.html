@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 style="text-align: center">Tabela de vendas</h2> <!--atributo style-->
+    <table border="2" align="center" cellpadding="10" cellspacing="2"> <!--tabela-->
+        <!--atributos:\
+        border= espessura da borda da tabela 
+        cellpadding= espaço interno da célula
+        cellspacing= espaço entre as células-->
+        <thead> <!--agrupa o conteúdo do cabeçalho da tabela-->
+            <tr> <!--tr = table row = linha-->
+                <th>Produto</th><!--cada título do cabeçalho-->
+                <th>Quantidade</th> <!-- célula do primeiro título-->
+                <th>Valor unitário</th>
+                <th>Total</th>
+
+            </tr>
+        </thead>  
+        <tbody align="center"> <!--corpo da tabela-->
+            <tr>
+                <td>Notebook  <!--1ª célula da 1ª linha do corpo da tabela-->
+                    <!--exemplo de tabulação com encadeamento
+                    <table border="1" style="margin-top: 10px; font-size: 12px; background-color: #a281cd">
+                        <thead>
+                        <tr>
+                            <th>Componente</th>
+                            <th>Especificação</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Memória</td>
+                                <td>16GB RAM</td>
+                            </tr>
+                            <tr>
+                                <td>Armazenamento</td>
+                                <td>512GB SSD</td>
+                            </tr>
+                        </tbody>
+
+                    </table>-->
+                </td>
+                <td>2</td>
+                <td>R$2300</td>
+                <td>R$4600</td>
+
+            </tr>
+             <tr>
+                <td>Mouse</td>
+                <td>1</td>
+                <td>R$20</td>
+                <td>R$20</td>
+            </tr>
+             <tr>
+                <td>Teclado</td>
+                <td>1</td>
+                <td>R$250</td>
+                <td>R$250</td>
+            </tr>
+             <tr>
+                <td>Headset</td>
+                <td>1</td>
+                <td>R$200</td>
+                <td>R$200</td>
+            </tr>
+            <tr>
+                <td>Cadeira Gamer</td>
+                <td>1</td>
+                <td>R$700</td>
+                <td>R$700</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr align="center">
+                <td colspan="3">Total geral</td> <!--mesclar pegando 3 colunas-->
+                <td>R$5770</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    
+</body>
+</html>
