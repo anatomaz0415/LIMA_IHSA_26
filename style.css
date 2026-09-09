@@ -77,16 +77,16 @@ section{
     padding: 15px;
 }
 
-.section1{
+#section1{
     background-color: #236ed8;
     margin: 0;
 }
 
-.section2{
+#section2{
     background-color: #159db5;
 }
 
-.section3{
+#section3{
     background-color: #eb9be2;
 }
 
