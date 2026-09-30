@@ -1,0 +1,168 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:Arial, Helvetica, sans-serif 
+}
+
+body{
+    background-image: url('./assets/silvas_resort.jpg'); 
+
+    /* Configurações essenciais para a imagem ficar perfeita */
+    background-size: cover;       /* Faz a imagem preencher a tela toda sem distorcer */
+    background-position: center;  /* Mantém o centro da imagem sempre visível */
+    background-repeat: no-repeat; /* Impede que imagens menores se repitam como um mosaico */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container{
+    display: flex;
+    background-color: #ffff;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 10px 25px rgba(0,0,0, 0.1);
+    overflow: hidden;
+}
+
+.sidebar{
+    background-color: #ed8e27;
+    color: #ffffff;
+    width: 40%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo h2{
+    font-weight: bold;
+}
+.logo span{
+    font-weight: normal;
+}
+.welcome-text h1{
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+.welcome-text .subtitle{
+    font-size: 1.2rem; 
+    line-height: 1.4;
+}
+
+.form-area{
+    width: 55%;
+    padding: 40px;
+}
+
+.form-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 30px;
+}
+
+.form-header h2{
+    color: #4a5568;
+}
+
+.form-header a{
+    color: #eea724;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.input-group{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+}
+.input-group label{
+  font-size: 0.85rem;
+  color: #4a5568;
+  margin-bottom: 8px;
+  font-weight: bold;
+
+}
+.input-group input{
+    padding: 12px;
+    border: 1px solid #ffff;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #4a5568;
+    outline: none;
+    transition: border 0.3s;
+
+}
+
+.input-group input:focus{
+    border-color: #eea724;
+}
+
+.options-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.checkbox-group{
+    display: flex;
+    align-items: center;
+    gap: 8px; /*espaço entre um elemento e outro*/
+}
+
+.checkbox-group input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.checkbox-group label{
+    font-size: 0.85rem;
+    color: #4a5568;
+    cursor: pointer;
+}
+
+.forgot-password{
+    font-size: 0.85rem;
+    color: #ed8e27;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.forgot-password:hover{
+    color: #eea724;
+    text-decoration: underline;
+}
+
+.button-container{
+    width: 100%;
+}
+
+.btn-submit{
+    background-color: #ed8e27;
+    color: #ffff;
+    border: none;
+    width: 100%;
+    padding: 14px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btn-submit:hover{
+    background-color: #eea724;
+}
+
+
+
+
+
+

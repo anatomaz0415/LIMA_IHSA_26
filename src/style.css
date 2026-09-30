@@ -1,0 +1,173 @@
+/* Reset básico para garantir que as margens padrão não atrapalhem */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /*background-color: #f4b146; /* da tela*/
+
+
+    /* Adicionando a imagem de fundo */
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/silvas_resort.jpg');*/
+    background-image: url('./assets/silvas_resort.jpg'); 
+
+    /* Configurações essenciais para a imagem ficar perfeita */
+    background-size: cover;       /* Faz a imagem preencher a tela toda sem distorcer */
+    background-position: center;  /* Mantém o centro da imagem sempre visível */
+    background-repeat: no-repeat; /* Impede que imagens menores se repitam como um mosaico */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container principal com Flexbox para colocar a barra lateral e o formulário lado a lado */
+.container {
+    display: flex;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden; /* Garante que as bordas arredondadas cortem o conteúdo interno */
+}
+
+/* BARRA LATERAL */
+.sidebar {
+    background-color: #ed8e27;
+    color: #ffffff;
+    width: 40%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo h2 {
+    font-weight: bold;
+}
+.logo span {
+    font-weight: normal;
+}
+
+.welcome-text h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+.welcome-text .subtitle {
+    font-size: 1.2rem; /*1.2rem é uma unidade de medida relativa que significa 1,2
+     vez o tamanho da fonte do elemento raiz (<html>). Se a raiz padrão do navegador for 16px, 1.2rem equivale a 19.2px (1,2 x 16).*/
+    line-height: 1.4; /*define a altura da linha de um texto, controlando o espaçamento vertical entre as linhas de um parágrafo.*/
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+/* ÁREA DO FORMULÁRIO (Branca) */
+.form-area {
+    width: 60%;
+    padding: 40px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 30px;
+}
+
+.form-header h2 {
+    color: #4a5568;
+}
+
+.form-header a {
+    color: #e8ad17;
+    text-decoration: none;
+    font-weight: bold;
+}
+.form-header a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form-section {
+    margin-bottom: 30px; 
+}
+
+.form-section h3 {
+    color: #e8ad17;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* CSS Grid para colocar os inputs em 2 colunas */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanhos iguais */
+    gap: 20px; /* Espaçamento entre os campos */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    color: #4a5568;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input-group input, 
+.input-group select {
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #4a5568;
+    outline: none; /*• Remove a borda de destaque padrão (linha externa) que os
+     navegadores adicionam automaticamente ao redor de um elemento quando ele é selecionado ou focado (efeito :focus).
+*/
+    transition: border 0.3s;
+    /*• O que faz: Cria uma animação suave ao alterar as propriedades da borda do elemento.
+• Como funciona: Em vez de a borda mudar de cor ou estilo instantaneamente, 
+a mudança vai levar 0.3 segundos (300 milissegundos) para acontecer de forma gradual.
+*/
+}
+
+.input-group input:focus, 
+.input-group select:focus {
+    border-color: #55c0c8;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Joga o botão para a direita */
+    margin-top: 20px;
+}
+
+.btn-submit {
+    background-color: #ed8e27;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #00aeb5;
+}
+

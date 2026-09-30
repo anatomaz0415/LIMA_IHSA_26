@@ -1,0 +1,123 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+header{
+    background-color: #eda93c;
+    color: white;
+    padding: 20px 20px 2px 20px;
+
+}
+
+header img{
+    width: 20%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+header ul{
+    list-style-type: none;
+    text-align: end;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+header ul li{
+    display: inline;
+    margin-right: 10px;
+}
+header ul li a{
+    color: rgb(78,78, 243);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #eda93c;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+main{
+    text-align: center;
+    margin: 0;
+    width: 100%;
+
+}
+main img{
+    width: 80%;
+    max-width:  600px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+
+footer{
+    background-color: #f79e30;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+section{
+    padding: 15px;
+}
+
+#section1{
+    background-image: url('../assets/resort.gif');
+    background-size: cover; /*faz a imagem preencher toda tela sem distorcer */
+    background-position: center; /*mantém o centro da imagem sempre visível*/
+    background-repeat: no-repeat;
+    margin: 0;
+
+}
+#section2{
+    background-image: url('../assets/resort.gif');
+    background-size: cover; /*faz a imagem preencher toda tela sem distorcer */
+    background-position: center; /*mantém o centro da imagem sempre visível*/
+    background-repeat: no-repeat; /*impede que imagens menores se repitam como um mosaico*/
+    margin: 0;
+}
+#section3{
+    background-image: url('../assets/resort.gif');
+    background-size: cover; /*faz a imagem preencher toda tela sem distorcer */
+    background-position: center; /*mantém o centro da imagem sempre visível*/
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+

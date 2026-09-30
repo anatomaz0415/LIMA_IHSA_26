@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Meu Consultório</title>
+    <link rel="stylesheet" href="style_lg.css">
+</head>
+<body>
+
+    <div class="container login-container">
+        <!-- Coluna Esquerda: Informações -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>🏣<span>Silva's Resorts International</span></h2>
+            </div>
+            
+            <div class="welcome-text">
+                <h1>Bem-vindo de volta,</h1>
+                <p class="subtitle">Acesse seu painel para continuar.</p>
+            </div>
+        </aside>
+
+        <!-- Coluna Direita: Formulário de Login -->
+        <main class="form-area">
+            <header class="form-header">
+                <h2>Login</h2>
+                <!-- Link de volta para a tela de cadastro -->
+                <p>Novo por aqui? <a href="../index.html">Cadastre-se</a></p>
+            </header>
+
+            <form action="#" method="POST">
+                <div class="form-section">
+                    <!-- Sem a div "grid-layout", os campos empilham um embaixo do outro -->
+                    <div class="input-group">
+                        <label for="email_login">E-mail</label>
+                        <input type="email" id="email_login" placeholder="Informe o seu e-mail" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="senha_login">Senha</label>
+                        <input type="password" id="senha_login" placeholder="••••••" required>
+                    </div>
+                </div>
+
+                <!-- Agrupa o checkbox de lembrar e o link de esqueci a senha -->
+                <div class="options-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="lembrar">
+                        <label for="lembrar">Lembrar-me</label>
+                    </div>
+                    <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit" class="btn-submit btn-login">Entrar</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>
