@@ -1,0 +1,125 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Configurações gerais da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container do formulário em caixa alinhada */
+form {
+    background: linear-gradient(145deg, #0f172a, #1e293b);
+    color: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column; /* Alinha todos os elementos um em cima do outro */
+}
+
+/* Estilo dos rótulos (labels) */
+label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #e2e8f0;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    display: block;
+    letter-spacing: 0.3px;
+}
+
+/* O primeiro label não precisa de margem no topo */
+label:first-of-type {
+    margin-top: 0;
+}
+
+/* Estilo dos inputs e textarea (campos de digitação) */
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    box-sizing: border-box;
+    display: block;
+    background-color: #ffffff;
+    color: #0f172a;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+}
+
+/* Cor do texto do placeholder */
+input::placeholder,
+textarea::placeholder {
+    color: #94a3b8;
+}
+
+/* Destaque ao clicar no campo (foco) */
+input:focus,
+textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* Campo somente de leitura (readonly) */
+input[readonly] {
+    background-color: #e2e8f0;
+    color: #475569;
+    border-color: #cbd5e1;
+    cursor: default;
+}
+
+/* Campo desativado (disabled) */
+input[disabled] {
+    background-color: #cbd5e1;
+    color: #64748b;
+    border-color: #94a3b8;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+/* Ajuste da área de texto */
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+/* Botão de envio */
+button[type="submit"] {
+    margin-top: 24px;
+    padding: 13px;
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+button[type="submit"]:hover {
+    background-color: #2563eb;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+}
