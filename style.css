@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #87e9b8;
+    padding: 40px 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 425px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label,
+.section-title {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+.section-title {
+    margin-top: 10px;
+}
+
+/* Input principal (text, number, date, search, file) */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="search"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="search"]:focus,
+input[type="file"]:focus {
+    border-color: #252eb2;
+}
+
+/* Estilo para input de cor */
+input[type="color"] {
+    width: 100%;
+    height: 40px;
+    padding: 4px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    background: white;
+}
+
+/* Alinhamento de Radio e Checkbox */
+.inline-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.inline-option label {
+    display: inline;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #252eb2;
+}
+
+/* Container de Pesquisa com Ícone alinhado */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="search"] {
+    padding-right: 35px;
+}
+
+.search-container .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 14px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    background: #252eb2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #4e50d6;
+}
