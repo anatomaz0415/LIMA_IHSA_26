@@ -1,0 +1,57 @@
+    body {
+        background-color: #1a1a1a;
+        color: #111;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    table {
+        border-collapse: separate;
+        border-spacing: 4px;
+        table-layout: fixed;
+    }
+
+    /* Estilo base de cada célula/elemento */
+    .e {
+        width: 65px;
+        height: 75px;
+        padding: 4px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        cursor: pointer;
+        transition: transform 0.1s;
+    }
+
+    .e:hover {
+        transform: scale(1.1);
+        z-index: 10;
+        position: relative;
+    }
+
+    /* Tipografia interna usando sup e sub */
+    .e sup { text-align: left; font-size: 0.7rem; font-weight: bold; }
+    .e b { text-align: center; font-size: 1.4rem; line-height: 1; margin-top: -4px; }
+    .e span { text-align: center; font-size: 0.5rem; text-transform: uppercase; letter-spacing: -0.5px; }
+    .e sub { text-align: center; font-size: 0.6rem; }
+
+    /* Células invisíveis e marcadores */
+    .vazio { border: none; background: transparent; }
+    .marcador { color: #fff; text-align: center; vertical-align: bottom; padding-bottom: 10px; font-size: 0.8rem;}
+
+    /* Cores das Famílias Químicas */
+    .am { background-color: #a0c4ff; } /* Ametal */
+    .gn { background-color: #ffd6a5; } /* Gás Nobre */
+    .ma { background-color: #fdffb6; } /* Metal Alcalino */
+    .mt { background-color: #caffbf; } /* Metal Alcalinoterroso */
+    .tr { background-color: #ffadad; } /* Metal de Transição */
+    .pt { background-color: #bdb2ff; } /* Metal Pós-Transição */
+    .sm { background-color: #e4c1f9; } /* Semimetal */
+    .ha { background-color: #9bf6ff; } /* Halogênio */
+    .la { background-color: #ffc6ff; } /* Lantanídeo */
+    .ac { background-color: #fffffc; } /* Actinídeo */
